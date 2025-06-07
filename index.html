@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Darren - Portfolio</title>
+    <style>
+    </style>
+<script src="https://lib.youware.com/youware-lib.1747145198.js" id="yourware-lib"></script></head>
+<body>
+    <div class="dots-container">
+        <!-- Will be populated by JS -->
+    </div>
+
+    <div class="container">
+        <nav class="nav">
+            <div class="logo">
+                <h2>portfolio</h2>
+            </div>
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#skills"><i class="fas fa-brain"></i> Skills</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        
+        <main class="main-content">
+            <section id="home">
+                <div class="profile-img">
+                    <!-- Placeholder for profile image -->
+                    <img src="https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-6/468764601_2413623965647433_9102085169677877610_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGTos__npl9_VeKYwGDxM4IjuHGlT23E4iO4caVPbcTiMtB7ATc5WOIJUmy2x7ms5B-iNHuPcrotfXBfVrH4852&_nc_ohc=5MVSE0GRhT0Q7kNvwGCxM8R&_nc_oc=AdneEWQbPoV6pp17VUZb-dKyD504KGMJnArnY7RhLuT7NJRZkP0nORHLtHtcFyhrcx0&_nc_zt=23&_nc_ht=scontent.fmnl13-1.fna&_nc_gid=QJeN-eIBqGuhjq6CITkUag&oh=00_AfN2pQQmMWrJD4IRS2IKKBYc0ZSTt0tzMRFoM5IiQdX5qQ&oe=6848A95D" alt="Kabelo Nongwe">
+                </div>
+                <div class="profile-info">
+                    <h1>DARREN KAY PANULAYA</h1>
+                    <h3>BIST 3rd year Student</h3>
+                    <p>
+                        Ambitious Bachelor of Information Systems Technology student currently in my 3rd year. 
+                        Skilled in Python programming with a focus on AI applications and networking technologies.
+                        Passionate about implementing innovative technological solutions to address real-world challenges.
+                        Based in Bloemfontein, Free State.
+                    </p>
+                </div>
+            </section>
+            
+            <section id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="icon"><i class="fas fa-robot"></i></div>
+                        <h3>For Blender 3D</h3>
+                        <p>Integrates 3D models, renders, and animations into web projects using Blender, enhancing UI/UX with interactive 3D elements.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="icon"><i class="fas fa-microchip"></i></div>
+                        <h3>For Synfig</h3>
+                        <p>Creates smooth, scalable 2D animations with Synfig Studio for web-based storytelling, explainer videos, or branded content.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="icon"><i class="fab fa-google"></i></div>
+                        <h3>For HTML/Web Dev</h3>
+                        <p>uilds responsive, performant websites with modern frameworks, ensuring seamless integration of multimedia assets.</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            
+             <section id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>BSIT Student Intern</h3>
+                        <div class="date"><i class="far fa-calendar-alt"></i> TechSolutions Inc., Jan 2025 - Present</div>
+                        <p>Working with senior developers to build and maintain web applications. Responsibilities include front-end development, database management, and implementing AI-powered features.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Campus IT Assistant</h3>
+                        <div class="date"><i class="far fa-calendar-alt"></i> University IT Department, Aug 2024 - Dec 2024</div>
+                        <p>Provided technical support to students and staff, assisted with network maintenance, and helped implement new software systems across campus.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Coding Bootcamp Participant</h3>
+                        <div class="date"><i class="far fa-calendar-alt"></i> Code Academy Africa, May 2024 - July 2024</div>
+                        <p>Completed an intensive 12-week program focused on full-stack web development, mobile app development, and data science fundamentals.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                        <p> MITAR ROAD</p><br>STA MONICA PPC<br>PALAWAN</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3><i class="fas fa-phone-alt"></i> Phone</h3>
+                        <p>09612059578</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <a href="mailto:knongwe82@gmail.com">pdarrenkay@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="signature">
+                    <p>© 2025 darren kay panulaya. All rights reserved.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Create floating dots
+        const createDots = () => {
+            const container = document.querySelector('.dots-container');
+            const dotCount = 50; // Number of dots
+            
+            for (let i = 0; i < dotCount; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                
+                // Random size between 2-8px
+                const size = Math.random() * 6 + 2;
+                dot.style.width = `${size}px`;
+                dot.style.height = `${size}px`;
+                
+                // Random position
+                dot.style.left = `${Math.random() * 100}%`;
+                dot.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation delay
+                dot.style.animationDelay = `${Math.random() * 5}s`;
+                
+                container.appendChild(dot);
+            }
+        };
+        
+        // Navigation highlighting
+        const handleNavHighlight = () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav ul li a');
+            
+            window.addEventListener('scroll', () => {
+                let current = '';
+                const scrollPosition = window.scrollY;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 200;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (scrollPosition >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+            
+            // Click handler for smooth scrolling
+            navLinks.forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
+                    
+                    if (target) {
+                        // Remove active from all
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        // Add active to current
+                        this.classList.add('active');
+                        
+                        window.scrollTo({
+                            top: target.offsetTop - 50,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        };
+        
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            createDots();
+            handleNavHighlight();
+            
+            // Add scroll animations
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.skill-card, .cert-card, .timeline-item, .contact-item');
+                
+                elements.forEach(element => {
+                    const elementPosition = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementPosition < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Set initial state for animations
+            const elementsToAnimate = document.querySelectorAll('.skill-card, .cert-card, .timeline-item, .contact-item');
+            elementsToAnimate.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(50px)';
+                element.style.transition = 'all 0.6s ease-out';
+            });
+            
+            // Run on scroll
+            window.addEventListener('scroll', animateOnScroll);
+            // Run once on page load
+            animateOnScroll();
+        });
+    </script>
+</body>
+</html>
